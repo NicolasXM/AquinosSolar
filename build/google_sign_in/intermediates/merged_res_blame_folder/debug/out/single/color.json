@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\nicol\\Documents\\ProjetosFlutter\\AquinosSolar\\aquinosolar\\build\\google_sign_in\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\nicol\\.gradle\\caches\\transforms-2\\files-2.1\\055875368d434444327a7f7a41a6d871\\jetified-play-services-base-16.0.1\\res\\color\\common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\nicol\\Documents\\ProjetosFlutter\\AquinosSolar\\aquinosolar\\build\\google_sign_in\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\nicol\\.gradle\\caches\\transforms-2\\files-2.1\\055875368d434444327a7f7a41a6d871\\jetified-play-services-base-16.0.1\\res\\color\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\nicol\\Documents\\ProjetosFlutter\\AquinosSolar\\aquinosolar\\build\\google_sign_in\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_tint.xml",
+        "source": "C:\\Users\\nicol\\.gradle\\caches\\transforms-2\\files-2.1\\055875368d434444327a7f7a41a6d871\\jetified-play-services-base-16.0.1\\res\\color\\common_google_signin_btn_tint.xml"
+    }
+]

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">954465446216-nst6r5itikjdjvbuclet2s26eq8eu5vq.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">954465446216</string>
+    <string name="google_api_key" translatable="false">AIzaSyDMF1TUBnO0gBZ0lp8Wz6VhKujxydXo8cU</string>
+    <string name="google_app_id" translatable="false">1:954465446216:android:78fe3328ab4b01a7afeb7d</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDMF1TUBnO0gBZ0lp8Wz6VhKujxydXo8cU</string>
+    <string name="google_storage_bucket" translatable="false">aquinossolar.appspot.com</string>
+    <string name="project_id" translatable="false">aquinossolar</string>
+</resources>
