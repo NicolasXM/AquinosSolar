@@ -1,11 +1,11 @@
 import 'package:equatable/equatable.dart';
 
 class PerfilLogged extends Equatable {
-  final String name;
-  final String email;
-  final String phoneNumber;
+  final String? name;
+  final String? email;
+  final String? phoneNumber;
 
-  const PerfilLogged(this.name, this.email, this.phoneNumber, {String? name, String? email, String? phoneNumber});
+  PerfilLogged(this.name, this.email, this.phoneNumber);
 
   @override
   // TODO: implement props
