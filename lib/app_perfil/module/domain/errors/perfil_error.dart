@@ -1,5 +1,3 @@
-import 'package:dartz/dartz.dart';
-
 abstract class Failure implements Exception {
   String get message;
 }
@@ -7,31 +5,31 @@ abstract class Failure implements Exception {
 class ConnectionError extends Failure {
   final String message;
 
-  ConnectionError(this.message);
+  ConnectionError({required this.message});
 }
 
 class ErrorLoginEmail extends Failure {
   final String message;
 
-  ErrorLoginEmail(this.message);
+  ErrorLoginEmail({required this.message});
 }
 
 class ErrorLogout extends Failure {
   final String message;
 
-  ErrorLogout(this.message);
+  ErrorLogout({required this.message});
 }
 
 class ErrorGetLoggedUser extends Failure {
   final String message;
 
-  ErrorGetLoggedUser(this.message);
+  ErrorGetLoggedUser({required this.message});
 }
 
 class ErrorLoginPhone extends Failure {
   final String message;
 
-  ErrorLoginPhone(this.message);
+  ErrorLoginPhone({required this.message});
 }
 
 class InternalError implements Failure {

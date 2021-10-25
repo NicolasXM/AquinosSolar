@@ -8,8 +8,12 @@ class PerfilCredential {
   final String? code;
   final String? verificationId;
 
-  PerfilCredential(this.email, this.password, this.phoneNumber, this.code,
-      this.verificationId);
+  PerfilCredential._(
+      {this.email,
+      this.password,
+      this.phoneNumber,
+      this.code,
+      this.verificationId});
 
   bool get isValidEmail => validator.isEmail(email ?? "");
   bool get isValidPassword => password!.isNotEmpty && password!.length > 5;
@@ -22,6 +26,18 @@ class PerfilCredential {
 
   factory PerfilCredential.withEmailAndPassword(
       {@required String? email, required String password}) {
-    return PerfilCredential.(email: email, password: password);
+    return PerfilCredential._(email: email, password: password);
+  }
+
+  factory PerfilCredential.withPhone({@required String? phoneNumber}) {
+    return PerfilCredential._(phoneNumber: phoneNumber);
+  }
+
+  factory PerfilCredential.withVerificationCode(
+      {@required String? code, @required String? verificationId}) {
+    return PerfilCredential._(
+      code: code,
+      verificationId: verificationId,
+    );
   }
 }

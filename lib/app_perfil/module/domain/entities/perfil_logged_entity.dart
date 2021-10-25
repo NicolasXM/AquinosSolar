@@ -5,9 +5,8 @@ class PerfilLogged extends Equatable {
   final String? email;
   final String? phoneNumber;
 
-  PerfilLogged(this.name, this.email, this.phoneNumber, {String? email});
+  const PerfilLogged({this.name, this.email, this.phoneNumber});
 
   @override
-  // TODO: implement props
   List<Object?> get props => [name, email, phoneNumber];
 }
