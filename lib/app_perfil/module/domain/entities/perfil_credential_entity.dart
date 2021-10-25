@@ -22,6 +22,6 @@ class PerfilCredential {
 
   factory PerfilCredential.withEmailAndPassword(
       {@required String? email, required String password}) {
-    return PerfilCredential._(email: email, password: password);
+    return PerfilCredential.(email: email, password: password);
   }
 }

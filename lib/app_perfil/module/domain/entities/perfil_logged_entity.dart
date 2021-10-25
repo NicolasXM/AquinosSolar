@@ -5,7 +5,7 @@ class PerfilLogged extends Equatable {
   final String? email;
   final String? phoneNumber;
 
-  PerfilLogged(this.name, this.email, this.phoneNumber);
+  PerfilLogged(this.name, this.email, this.phoneNumber, {String? email});
 
   @override
   // TODO: implement props
