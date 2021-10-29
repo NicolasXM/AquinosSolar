@@ -26,9 +26,9 @@ class LoginPhoneImp implements LoginPhone {
     var result = await service.isOnline();
 
     if (result.isLeft()) {
-      return result.map((r) => null);
+      return result.map((r) => null!);
     }
 
-    return await repository.loginPhone(phone: perfilcredential.phoneNumber);
+    return await repository.loginPhone(phone: perfilcredential.phoneNumber!);
   }
 }

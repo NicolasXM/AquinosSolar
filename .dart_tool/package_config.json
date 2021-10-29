@@ -20,6 +20,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "asuka",
+      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/asuka-2.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "async",
       "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.8.2",
       "packageUri": "lib/",
@@ -674,7 +680,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2021-10-25T02:45:53.463617Z",
+  "generated": "2021-10-29T02:32:34.534354Z",
   "generator": "pub",
   "generatorVersion": "2.15.0-181.0.dev"
 }

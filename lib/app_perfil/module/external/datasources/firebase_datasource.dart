@@ -15,7 +15,7 @@ class FirebaseDataSourceImp implements LoginDataSource {
   Future<UserModel> currentUser() async {
     var user = (await auth.currentUser);
 
-    if (user == null) throw ErrorGetLoggedUser();
+    if (user == null) throw ErrorGetLoggedUser(message: "Usuario nao logado");
 
     return UserModel(
       name: user.displayName,
@@ -25,10 +25,9 @@ class FirebaseDataSourceImp implements LoginDataSource {
   }
 
   @override
-  Future<UserModel> loginEmail(
-      {required String email, required String password}) async {
-    var result =
-        await auth.signInWithEmailAndPassword(email: email, password: password);
+  Future<UserModel> loginEmail({String? email, String? password}) async {
+    var result = await auth.signInWithEmailAndPassword(
+        email: email!, password: password!);
 
     var user = result.user;
 
@@ -50,8 +49,8 @@ class FirebaseDataSourceImp implements LoginDataSource {
         verificationFailed: (e) {
           completer.completeError(e);
         },
-        codeSent: (String c, [int i]) {
-          completer.completeError(NotAutomaticRetrieved(c));
+        codeSent: (String c, [int? i]) {
+          completer.completeError(NotAutom(c));
         },
         codeAutoRetrievalTimeout: (v) {});
   }
@@ -63,8 +62,8 @@ class FirebaseDataSourceImp implements LoginDataSource {
 
   @override
   Future<UserModel> validateCode({String? verificationId, String? code}) async {
-    var _credential = PhoneAuthProvider.getCredential(
-        verificationId: verificationId, smsCode: code);
+    var _credential = PhoneAuthProvider.credential(
+        verificationId: verificationId!, smsCode: code!);
 
     var user = (await auth.signInWithCredential(_credential)).user;
 

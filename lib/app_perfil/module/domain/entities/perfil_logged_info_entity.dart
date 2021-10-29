@@ -1,5 +1,5 @@
 abstract class PerfilLoggedInfo {
-  String get name;
-  String get email;
-  String get phoneNumber;
+  String? get name;
+  String? get email;
+  String? get phoneNumber;
 }

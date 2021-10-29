@@ -25,7 +25,7 @@ class PerfilImpRepository implements PerfilRepository {
 
   @override
   Future<Either<Failure, PerfilLoggedInfo>> loginEmail(
-      {String email, String password}) async {
+      {String? email, String? password}) async {
     try {
       var user = await dataSource.loginEmail(email: email, password: password);
       return Right(user);
@@ -56,14 +56,13 @@ class PerfilImpRepository implements PerfilRepository {
 
   @override
   Future<Either<Failure, PerfilLoggedInfo>> verifyPhoneCode(
-      {String verificationId, String code}) async {
+      {String? verificationId, String? code}) async {
     try {
       var user = await dataSource.validateCode();
 
       return Right(user);
     } catch (e) {
-      return(Left(ErrorLoginPhone(message: "Error login with phone."));
-
+      return (Left(ErrorLoginPhone(message: "Error login with phone.")));
     }
   }
 }

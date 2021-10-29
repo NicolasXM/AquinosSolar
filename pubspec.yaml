@@ -35,7 +35,7 @@ dependencies:
   flutter_modular: ^4.1.2
   connectivity: ^3.0.6
   meta: ^1.7.0
-
+  asuka: any
 
 
 
